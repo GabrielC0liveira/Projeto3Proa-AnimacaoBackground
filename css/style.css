@@ -1,0 +1,136 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.bemvindo{
+    background-image: linear-gradient(#ff5722,#ffc107);
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+    font-family: sans-serif;
+}
+h1{
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 70px;
+    z-index: 1;
+}
+ul li{
+    position: absolute;
+    border: 1px solid #fff;
+    width: 30px;
+    height: 30px;
+    list-style: none;
+    opacity: 0;
+    background: #fff;
+}
+.quadrado li{
+    top: 50vh;
+    left: 45vw;
+    animation: quadrado 10s linear infinite;
+}
+.quadrado li:nth-child(2){
+    top: 80vh;
+    left: 10vw;
+    animation-delay: 2s;
+}
+.quadrado li:nth-child(3){
+    top: 80vh;
+    left: 85vw;
+    animation-delay: 4s;
+}
+.quadrado li:nth-child(4){
+    top: 10vh;
+    left: 70vw;
+    animation-delay: 6s;
+}
+.quadrado li:nth-child(5){
+    top: 10vh;
+    left: 10vw;
+    animation-delay: 8s;
+}
+@keyframes quadrado{
+    0%{
+        transform: scale(0) rotateY(0deg);
+        opacity: 1;
+    }
+    100%{
+        transform: scale(5) rotateY(1000deg);
+        opacity: 0;
+    }
+}
+.circulo li{
+    bottom: 0;
+    left: 15vw;
+    animation: circulo 10s linear infinite;
+}
+.circulo li:nth-child(2){
+    left: 35vw;
+    animation-delay: 2s;
+}
+.circulo li:nth-child(3){
+    left: 55vw;
+    animation-delay: 4s;
+}
+.circulo li:nth-child(4){
+    left: 75vw;
+    animation-delay: 6s;
+}
+.circulo li:nth-child(5){
+    left: 90vw;
+    animation-delay: 8s;
+}
+@keyframes circulo{
+    0%{
+        transform: scale(0) rotate(0deg);
+        opacity: 1;
+        bottom: 0;
+        border-radius: 0;
+    }
+     100%{
+        transform: scale(5) rotate(1000deg);
+        opacity: 0;
+        bottom: 90vh;
+        border-radius: 50%;
+    }
+}
+
+.circulo2 li {
+    bottom: 90vh;   
+    left: 10vw;
+    animation: circulo2 10s linear infinite;
+}
+.circulo2 li:nth-child(2){
+    left: 20vw;
+    animation-delay: 3s;
+}
+.circulo2 li:nth-child(3){
+    left: 30vw;
+    animation-delay: 4s;
+}
+.circulo2 li:nth-child(4){
+    left: 50vw;
+    animation-delay: 5s;
+}
+.circulo2 li:nth-child(5){
+    left: 70vw;
+    animation-delay: 6s;
+}
+
+@keyframes circulo2 {
+    0% {
+        transform: scale(0) rotate(0deg);
+        opacity: 1;
+        bottom: 90vh;   
+        border-radius: 0;
+    }
+    100% {
+        transform: scale(5) rotate(1000deg);
+        opacity: 0;
+        bottom: 0;     
+        border-radius: 50%;
+    }
+}
